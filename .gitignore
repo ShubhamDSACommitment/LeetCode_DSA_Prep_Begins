@@ -21,7 +21,7 @@ bin/
 /dist/
 /nbdist/
 /.nb-gradle/
-
+.idea/material_theme_project_new.xml
 ### VS Code ###
 .vscode/
 
