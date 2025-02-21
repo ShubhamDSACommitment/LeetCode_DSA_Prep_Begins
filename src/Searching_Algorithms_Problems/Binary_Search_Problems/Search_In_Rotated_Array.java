@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 class Search_In_Rotated_Array {
     public static void main(String[] args) {
-        int[] arr = new int[]{4, 5, 6, 7, 8, 0, 1, 2};
+        int[] arr = new int[]{4,5,6,7,0,1,2};
         int index = findPivotIndex(arr);
         System.out.println(arr[index]);
     }

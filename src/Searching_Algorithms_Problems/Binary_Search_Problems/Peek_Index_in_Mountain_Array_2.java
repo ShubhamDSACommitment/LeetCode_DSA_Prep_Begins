@@ -1,13 +1,14 @@
 package Searching_Algorithms_Problems.Binary_Search_Problems;
 //https://leetcode.com/problems/find-peak-element/description/
-public class Find_Pivot_In_Rotated_SortedArray {
+//same as first problem just the solving style is different
+public class Peek_Index_in_Mountain_Array_2 {
     public static void main(String[] args) {
-        int[] arr = new int[]{0,5,6,7,8,9,10,2,1};
-        System.out.println(findPivot(arr));
+        int[] arr = new int[]{4,5,6,7,8,0,2,1};
+        System.out.println(arr[findPeek(arr)]);
     }
-    public static int findPivot(int[] arr){
+    public static int findPeek(int[] arr){
         int n = arr.length-1;
-        if(n==1) return 0;
+        if(arr.length==1) return 0;
         if(arr[0]>arr[1]) return 0;
         if(arr[n]>arr[n-1]) return n;
         int start = 1;
